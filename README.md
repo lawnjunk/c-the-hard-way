@@ -59,3 +59,29 @@ The c programming language's only failing is giving you access to what is really
  * perform detailed profiling to help speed up your programs
  * more [about valgrind](http://valgrind.org/info/about.html)
  
+### ex5 program breakdown
+* walk through a basic hello-world ish program and explain the each line
+
+### ex6 types of variables (primatives)
+* **signed char** - 8bit signed char -128 to 127
+* **unsigned char** - 8bit char 0 to 255
+* **char** - depending on the sys its signed char or unsigned char
+* **short int** - 16bit signed int -32,768 to 32,767
+* **unsigned short int** - 16bit uint 0 to 65,535
+* **int** - 32bit signed int −2,147,483,648 to 2,147,483,647
+* **unsigned int** - 32bit unsigned int 0 to 4,294,967,295
+* **long int** - 64bit signed int 
+* **unsigned long int** - 64bit unsigned int
+* **float** - 16bit float
+* **double** - 32bit float
+* **long double** - 64bit float
+
+### ex7 
+* aritymatic and printf
+
+### ex8 
+* arrays are lists of a specific prymitave type
+* strings are arays pf chars ending withd **\0**
+* `sizeof()` tells you the number of bytes something has
+* `sizeof(array) / sizeof(int)` size of array / size of sizeof arraytype gives you the array length
+* 
