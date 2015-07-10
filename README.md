@@ -102,3 +102,7 @@ the wizzard. C is truth.
 * the number **0** is false, all other numers are true
 * while loops ya'know
  * use them when you dont know exactly how long a loop gun run
+
+### ex12 if, if else , else
+* controll your flow with conditional
+* if, if else else ya' know
