@@ -8,7 +8,10 @@ The book is can be found here [learn c the hard way](http://c.learncodethehardwa
 ----
 ### Introduction
 ```
-The c programming language's only failing is giving you access to what is really there, and telling you the cold hard raw truth. C gives you the red pill. C pulls the curtain back to show you the wizzard. C is truth.
+The c programming language's only failing is giving you access
+to what is really there, and telling you the cold hard raw truth. 
+C gives you the red pill. C pulls the curtain back to show you 
+the wizzard. C is truth.
 ```
 **-Zed**
 
