@@ -96,5 +96,9 @@ the wizzard. C is truth.
 * arrays of strings are arrays of arrays
 * args to a cmd are just arrays of strings
 
-###
-
+### ex11 while loops and bool expressions
+* there is no boolean type in c99
+* bollion expressions are things like `1 > 0` this will evaluate to True
+* the number **0** is false, all other numers are true
+* while loops ya'know
+ * use them when you dont know exactly how long a loop gun run
