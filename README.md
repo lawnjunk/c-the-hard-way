@@ -87,3 +87,11 @@ The c programming language's only failing is giving you access to what is really
 
 ### ex9 strings are arrays of characters
 * strings are arrays of characters
+
+### ex10 arrays of strings / argv
+* strings are arrays
+* arrays of strings are arrays of arrays
+* args to a cmd are just arrays of strings
+
+###
+
