@@ -27,3 +27,35 @@ The c programming language's only failing is giving you access to what is really
 * write a program that uses printf to print diff types o primitive
 * the data is just 0s in 1s, print f chooses to interperate that data as a __ primitave
 * add exercise to Makefile
+```
+  /*
+   * printf format charicters
+   * d = signed decimal int
+   * u = unsigned decimal interger
+   * 0 = unsigned octal
+   * x = unsigned hexadecimal integer
+   * C = unsigned hexadecimal integer (uppercase)
+   * f = decimal floating point (lowercase)
+   * F = decimal floating point (Uppercase)
+   * e = scientific notation (mantissa/expnent) (lowercase)
+   * E = scientific notation (mantissa/expnent) (uppercase)
+   * g = use the shortest representation of: %e or %f
+   * G = use the shortest representation of: %E or %F
+   * a = Hexadecimal floating poing (lowercase)
+   * A = Hexadecimal floating poing (uppercase)
+   * c = character
+   * s = string of characters
+   * p = pointer address
+   * n = nothing printed
+   * % = print a literal % 
+   */
+```
+
+### ex4 valgrind
+* valgrind is a tool for debuging c programs it helps with:
+ * detecting many memory management and thread bugs
+ * avoding hours of frustrating bug hunting
+ * makeing you programs more stable
+ * perform detailed profiling to help speed up your programs
+ * more [about valgrind](http://valgrind.org/info/about.html)
+ 
