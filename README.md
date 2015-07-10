@@ -13,6 +13,7 @@ to what is really there, and telling you the cold hard raw truth.
 C gives you the red pill. C pulls the curtain back to show you 
 the wizzard. C is truth.
 ```
+
 **-Zed**
 
 ### ex1 Hello wolrd
@@ -31,6 +32,7 @@ the wizzard. C is truth.
 * the data is just 0s in 1s, print f chooses to interperate that data as a __ primitave
 * add exercise to Makefile
 ```
+
   /*
    * printf format charicters
    * d = signed decimal int
@@ -53,6 +55,7 @@ the wizzard. C is truth.
    * % = print a literal % 
    */
 ```
+
 
 ### ex4 valgrind
 * valgrind is a tool for debuging c programs it helps with:
@@ -111,5 +114,30 @@ the wizzard. C is truth.
 * switch what yo do depending on some cases with a swtich
 * switch staments dont use boolean expressions, they are a jump table
 
+### ex14 functions
+* use functions whenever something is re-usable
+* use functions to moduluarize your code
+* if you are going to call the functions in an order that they are not defined in you must proto type the functions at the top before thay are called;
+ * ie.
+```
+#include <ctype.h>
 
+// prototype o the function
+int canIPrintIt(char ch);
 
+int main(){
+  char anEx = 'x';
+  
+  // call the function
+  if(canIPrintIt(anEx){
+    printf("%c\n", anEx);
+  } 
+}
+
+// implement the function
+int canIPrintIt(char ch){
+ return isalpha(ch) || isblank(ch);
+}
+```
+
+### ex15
