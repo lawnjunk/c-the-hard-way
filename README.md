@@ -76,12 +76,14 @@ The c programming language's only failing is giving you access to what is really
 * **double** - 32bit float
 * **long double** - 64bit float
 
-### ex7 
+### ex7 a little arythmitc and more on primatives
 * aritymatic and printf
 
-### ex8 
+### ex8 a little about arrays
 * arrays are lists of a specific prymitave type
 * strings are arays pf chars ending withd **\0**
 * `sizeof()` tells you the number of bytes something has
 * `sizeof(array) / sizeof(int)` size of array / size of sizeof arraytype gives you the array length
-* 
+
+### ex9 strings are arrays of characters
+* strings are arrays of characters

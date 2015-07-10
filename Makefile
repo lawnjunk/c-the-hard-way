@@ -15,5 +15,8 @@ ex7:
 ex8: 
 	cc ${CFLAGS} -o ${BUILD_DIR}/ex8 ex8.c
 
+ex9: 
+	cc ${CFLAGS} -o ${BUILD_DIR}/ex9 ex9.c
+
 clean: 
 	rm -f buld/*
