@@ -24,3 +24,6 @@ The c programming language's only failing is giving you access to what is really
 * write a Makefile to compile ex1 and clean build dir
 
 ### ex3 Formatted Printing 
+* write a program that uses printf to print diff types o primitive
+* the data is just 0s in 1s, print f chooses to interperate that data as a __ primitave
+* add exercise to Makefile
