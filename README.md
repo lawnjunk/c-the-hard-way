@@ -142,7 +142,7 @@ int canIPrintIt(char ch){
 
 ### ex15 POINTERS!
 * pointers are refrences to memory address
-* use ** * ** to make a pointer and use ** * ** to defrefrence a pointer
+* use ** \* ** to make a pointer and use ** \* ** to defrefrence a pointer
 * good times to use a pointer
  * when passing larg chunks of data
  * when working with a chunk of mem (strings, arrays, structs \*\*)
@@ -192,4 +192,8 @@ int main(){
  * `type *ptr = &thing` - a pointer of type named ptr set to the address of thing
  * `ptr++` - increment where ptr points
 
-###
+### ex16 Structs and pointers 2 structs
+* a structure is a collection of other data types that are stored in a block of memory
+* you can access each variable independently by name. 
+* you must manage struct memory your self (maloc and free)
+* when passing around structs use pointers :)
