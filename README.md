@@ -140,4 +140,49 @@ int canIPrintIt(char ch){
 }
 ```
 
-### ex15
+### ex15 POINTERS!
+* pointers are refrences to memory address
+* use ** * ** to make a pointer and use ** * ** to defrefrence a pointer
+* good times to use a pointer
+ * when passing larg chunks of data
+ * when working with a chunk of mem (strings, arrays, structs \*\*)
+ * taking the address of a function so you can use it as a dynamic callback **:)**
+ * use arrays if you can!
+ * complex scanning of chunks of memory such as converting bytes off a network socket into data structures or parsing file
+* because pointers are numbers (memory address numbers) you can do arithmatic with them
+ * for example with arrays **ex1 and ex2 are the same**
+``` 
+#include <stdio.h>
+
+int main(){
+
+  /// ex1 -- without pointer arithmatic;
+  int ex1[] = { 11,13,15,17};
+  int ex1Length = sizeof(ex1)/sizeof(int);
+
+  for (int i=0; i<ex1Length; i++){
+    printf("ext1[%d]:  %d\n", i, ex1[i]);
+  }
+
+  /// ex2 -- with pointer arithmatic;
+  int *ex2 = ex1;
+
+  int *cur = ex2;
+  while ( cur < (ex2 + ex1Length) ){
+    printf("ext[%d]:  %d\n", cur, *(cur));
+    cur++;
+  }
+
+}
+// ext1[0]:  11
+// ext1[1]:  13
+// ext1[2]:  15
+// ext1[3]:  17
+// ext[-1050837024]:  11
+// ext[-1050837020]:  13
+// ext[-1050837016]:  15
+// ext[-1050837012]:  17
+
+```
+
+### 
