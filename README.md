@@ -184,5 +184,12 @@ int main(){
 // ext[-1050837012]:  17
 
 ```
+* pointer lexicon
+ * `type *ptr` - a pointer of type name ptr
+ * `*ptr` - the value of what ever ptr is pointed at
+ * `(ptr + 1)` - the value you of what ever ever ptr is pointed at plus i 
+ * `&thing` - the addres of a thing
+ * `type *ptr = &thing` - a pointer of type named ptr set to the address of thing
+ * `ptr++` - increment where ptr points
 
-### 
+###
