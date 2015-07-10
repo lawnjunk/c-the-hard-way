@@ -104,5 +104,12 @@ the wizzard. C is truth.
  * use them when you dont know exactly how long a loop gun run
 
 ### ex12 if, if else , else
-* controll your flow with conditional
 * if, if else else ya' know
+* one way to controll the flow of your program
+
+### ex13 switch
+* switch what yo do depending on some cases with a swtich
+* switch staments dont use boolean expressions, they are a jump table
+
+
+

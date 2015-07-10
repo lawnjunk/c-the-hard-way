@@ -1,7 +1,7 @@
 CLAGS=-Wall -g
 BUILD_DIR=build
 
-all: ex1 ex3 ex7 ex8 ex9 ex10 ex11 ex12
+all: ex1 ex3 ex7 ex8 ex9 ex10 ex11 ex12 ex13
 
 ex1:
 	cc ${CFLAGS} -o ${BUILD_DIR}/ex1 ex1.c 
@@ -26,6 +26,9 @@ ex11:
 
 ex12:
 	cc ${CFLAGS} -o ${BUILD_DIR}/ex12 ex12.c
+
+ex13:
+	cc ${CFLAGS} -o ${BUILD_DIR}/ex13 ex13.c
 
 clean: 
 	rm -f buld/*
