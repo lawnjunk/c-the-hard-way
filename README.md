@@ -1,6 +1,6 @@
 LEARN C THE HARD WAY
 ====================
-
+timezone test :)
 **notes and solutions for learn c the hard way**
 
 The book is can be found here [learn c the hard way](http://c.learncodethehardway.org/book/)  
