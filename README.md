@@ -197,3 +197,6 @@ int main(){
 * you can access each variable independently by name. 
 * you must manage struct memory your self (maloc and free)
 * when passing around structs use pointers :)
+
+### ex17 heap and stack mem allocation
+
