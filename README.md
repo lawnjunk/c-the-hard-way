@@ -160,11 +160,11 @@ int main(){
   int ex1[] = { 11,13,15,17};
   int ex1Length = sizeof(ex1)/sizeof(int);
 
-  for (int i=0; i<ex1Length; i++){
+  for (int i=0; i<ex1Length; i++) {  
     printf("ext1[%d]:  %d\n", i, ex1[i]);
   }
 
-  /// ex2 -- with pointer arithmatic;
+  // ex2 -- with pointer arithmatic;
   int *ex2 = ex1;
 
   int *cur = ex2;
@@ -174,6 +174,7 @@ int main(){
   }
 
 }
+
 // ext1[0]:  11
 // ext1[1]:  13
 // ext1[2]:  15
@@ -183,7 +184,8 @@ int main(){
 // ext[-1050837016]:  15
 // ext[-1050837012]:  17
 
-```
+``` 
+
 * pointer lexicon
  * `type *ptr` - a pointer of type name ptr
  * `*ptr` - the value of what ever ptr is pointed at
@@ -199,4 +201,19 @@ int main(){
 * when passing around structs use pointers :)
 
 ### ex17 heap and stack mem allocation
+* **the heap**
+ * the heap is all the reaming  memory in your computer
+ * you access it with the function `malloc`
+ * malloc uses the os to register a peace of memory for you 
+ * when your done with that memory you have to call `free` to return the memory to the os
+* **the stacki**
+ * the stack is a region of memory that stores temporary variables each function creates as locals to that function
+ * its litery a stack that each arg is pushed onto
+ * when a function exits all the local variables are poped of the stack
+ * you dont have to manage memory for anything on the stack :)
+* **common problems**
+ * if you get a block of memory from malloc and then you put a pointer to it on the stack, then when the function returns you loose the pointer to that function
+ * if you put to much data on the stack(large struct or array) then you can cause a "stack overflow" and the program will abort, in this case use heap with maloc
+ * if you point to something on the stack, then pass that or return it from your function , then the function reciving it will "segmentation fault" (segault) because the actual data will get popped off and disappear. youll be pointing to dead space.
+
 
