@@ -52,7 +52,35 @@ int strageOrder(int a, int b){
   }
 }
 
-int main(){
+void testSorting(int *numbers, int count, compareCb cmp){
+  int i =0;
+  int *sorted = bubbleSort(numbers, count, cmp);
+
+  if(!sorted) die("Failed to sort as requested");
+  for (i=0; i< count; i++){
+    printf("%d ", sorted[i]);
+  }
+  printf("\n");
+  free(sorted);
+}
+
+int main(int argc, char *argv[]){
+  if (argc < 2) die("USAGE: ex18 2 3 4 1 6");
+
+  int count = argc - 1;
+  int i = 0;
+  char **inputs = argv + 1;
+  
+  int *numbers = malloc(count * sizeof(int));
+  if(!numbers) die("Memory Error");
+  
+  for(i=0; i<count; i++){
+    numbers[i] = atoi(inputs[i]);
+  } 
+
+  testSorting(numbers, count, sortedOrder);
+  testSorting(numbers, count, reversedOrder);
+  testSorting(numbers, count, strageOrder);
 
   return 0;
 }
