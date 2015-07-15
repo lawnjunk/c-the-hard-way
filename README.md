@@ -217,4 +217,11 @@ int main(){
  * if you put to much data on the stack(large struct or array) then you can cause a "stack overflow" and the program will abort, in this case use heap with maloc
  * if you point to something on the stack, then pass that or return it from your function , then the function reciving it will "segmentation fault" (segault) because the actual data will get popped off and disappear. youll be pointing to dead space.
 
+### Pointers to Functions
+* pointers in c are ususally just pointers to a spot in the program where some code exists.
+* the main use for this is to pass callbacks to other functions.
+* the format of a pointer ot a function is 
+ * `returnType (*PointerName)(int args,char *args);`
+ * **ie** `int (*compare)(int a, int b);`
+* use typedef and a pointer to a function to make a functype for callbacks :)
 
